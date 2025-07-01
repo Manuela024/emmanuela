@@ -1,0 +1,213 @@
+
+/* Hero Section */
+ header {
+  width: 100%;
+    background-color: #921b1b;
+    padding: 10px 0;
+  }
+  
+  .menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item {
+    position: relative;
+    padding: 15px 20px;
+    color: #f8f9fa;
+    cursor: pointer; 
+  }
+  
+  .menu-item:hover {
+    background-color: #555;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 40px;
+  }
+  .submenu img{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    z-index: -1;
+  }
+ 
+   
+  .submenu li {
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .submenu li:hover {
+    background-color: #eee;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+.hero-section {
+  position: relative;
+  background: url('./PHOTOS/bellevie.jpg') center/cover no-repeat;
+  height: 100vh;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+}
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-section .content {
+  /* position: relative; */
+  z-index: 1;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Offre Spéciale */
+.special-offer {
+  background-color: #f8f9fa;
+}
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+/* Galerie Noir et Blanc */
+.carousel-item {
+  filter: grayscale(100%);
+  width: 95%;
+  
+  transition: all 0.5s ease;
+}
+.carousel-item img{
+  border-radius: 10px;
+}
+.carousel-item:hover {
+  filter: grayscale(0%);
+  width: 100%;
+
+}
+
+/* Produits */
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+.product-card .back-img {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  height: 500px;
+  width: 200px;
+}
+.product-card:hover .back-img {
+  opacity: 1;
+}
+.product-card .price-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.text-overlay .overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  padding: 5px 10px;
+  font-weight: bold;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.text-overlay:hover .overlay-text {
+  transform: scale(1.2);
+}
+
+/* Pied de page */
+footer a img {
+  vertical-align: middle;
+}
+/* .image-hover-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; */
+.pricedisplay{
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+.product-card:hover .pricedisplay{
+  opacity: 1;
+}
+.stell{
+  background-color: burlywood;
+  border-radius: 20px;
+}
+.ligne{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.ligne div:nth-child(1){
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.ligne div:nth-child(1) label{
+  color: moccasin;
+  font-size: 16px;
+  padding-block: 20px;
+}
+.ligne button{
+  display: block;
+}
+#newsletter-checkbox{
+  position: absolute;
+  right: O;
+}
+.vie{
+  background-color: red;
+  border-radius: 20px;
+}
+.yah {
+  text-align: center;
+}
+.bel{
+  text-align: center;
+}
+/* .ROI{
+  text-align: center;
+} */
+
+
+
